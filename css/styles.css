@@ -579,11 +579,11 @@ img {
   color: var(--color-bg-iris);
   padding: 12px 24px;
 
-  transition-property: color, box-shadow, border;
-  transition-duration: var(--anim-base), var(--anim-base), var(--anim-base);
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: var(--anim-base), var(--anim-base), var(--anim-base),
+    var(--anim-base);
   transition-timing-function: var(--anim-timing), var(--anim-timing),
-    var(--anim-timing);
-  transition-delay: 0ms;
+    var(--anim-timing), var(--anim-timing);
 }
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
