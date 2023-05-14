@@ -143,10 +143,6 @@ img {
 }
 .btn-dark {
   background-color: var(--color-bg-iris);
-  transition-property: background-color, box-shadow;
-  transition-duration: var(--anim-base), var(--anim-base);
-  transition-timing-function: var(--anim-timing), var(--anim-timing);
-  transition-delay: 0ms;
 }
 .btn-dark:hover,
 .btn-dark:focus {
@@ -476,10 +472,13 @@ img {
   border-radius: 4px;
   color: var(--color-border-light-slate);
 
-  transition-property: color, border;
+  transition: color var(--anim-base) var(--anim-timing),
+    border var(--anim-base) var(--anim-timing);
+
+  /* transition-property: color, border;
   transition-duration: var(--anim-base), var(--anim-base);
   transition-timing-function: var(--anim-timing), var(--anim-timing);
-  transition-delay: 0ms;
+  transition-delay: 0ms; */
 }
 .customers-link:hover,
 .customers-link:focus {
