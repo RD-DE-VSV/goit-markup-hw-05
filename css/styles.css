@@ -143,9 +143,9 @@ img {
 }
 .btn-dark {
   background-color: var(--color-bg-iris);
-  transition-property: box-shadow, background-color;
-  transition-duration: var(--anim-base);
-  transition-timing-function: var(--anim-timing);
+  transition-property: background-color, box-shadow;
+  transition-duration: var(--anim-base), var(--anim-base);
+  transition-timing-function: var(--anim-timing), var(--anim-timing);
   transition-delay: 0ms;
 }
 .btn-dark:hover,
@@ -224,13 +224,17 @@ img {
 .header-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
 }
+.current {
+  color: var(--color-txt-nav-hover-ocean);
+}
+
 .header-link.current::after {
   /* .header-link.current::after,
 .header-link:hover::after,
@@ -473,8 +477,8 @@ img {
   color: var(--color-border-light-slate);
 
   transition-property: color, border;
-  transition-duration: var(--anim-base);
-  transition-timing-function: var(--anim-timing);
+  transition-duration: var(--anim-base), var(--anim-base);
+  transition-timing-function: var(--anim-timing), var(--anim-timing);
   transition-delay: 0ms;
 }
 .customers-link:hover,
@@ -577,8 +581,9 @@ img {
   padding: 12px 24px;
 
   transition-property: color, box-shadow, border;
-  transition-duration: var(--anim-base);
-  transition-timing-function: var(--anim-timing);
+  transition-duration: var(--anim-base), var(--anim-base), var(--anim-base);
+  transition-timing-function: var(--anim-timing), var(--anim-timing),
+    var(--anim-timing);
   transition-delay: 0ms;
 }
 .portfolio-filter-btn:hover,
@@ -682,8 +687,8 @@ img {
   border-radius: 50%;
 
   transition-property: background-color, color;
-  transition-duration: var(--anim-base);
-  transition-timing-function: var(--anim-timing);
+  transition-duration: var(--anim-base), var(--anim-base);
+  transition-timing-function: var(--anim-timing), var(--anim-timing);
   transition-delay: 0ms;
 }
 .modal-btn:hover,
