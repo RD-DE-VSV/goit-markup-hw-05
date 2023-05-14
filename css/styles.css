@@ -618,12 +618,11 @@ img {
 
   transition: transform var(--anim-base) var(--anim-timing);
 }
-.portfolio-item:hover .portfolio-overlay,
-.portfolio-item:focus .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay {
   transform: translateY(0%);
 }
-.portfolio-overlay-lable {
-  color: var(--color-txt-caption-cloud);
+.portfolio-item:focus .portfolio-overlay {
+  transform: translateY(0%);
 }
 /* 
   |==========================================================
