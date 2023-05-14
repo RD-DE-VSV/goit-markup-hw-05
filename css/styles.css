@@ -473,7 +473,7 @@ img {
   color: var(--color-border-light-slate);
 
   transition: color var(--anim-base) var(--anim-timing),
-    border var(--anim-base) var(--anim-timing);
+    border-color var(--anim-base) var(--anim-timing);
 
   /* transition-property: color, border;
   transition-duration: var(--anim-base), var(--anim-base);
@@ -652,9 +652,9 @@ img {
 }
 .modal {
   position: absolute;
-  top: 88px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%) scale(1);
 
   width: 408px;
   min-height: 576px;
@@ -671,6 +671,10 @@ img {
 }
 
 .modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
   display: flex;
   margin-left: auto;
   cursor: pointer;
@@ -679,13 +683,14 @@ img {
 
   width: 24px;
   height: 24px;
+  padding: 0;
 
   color: var(--color-navy-blue-modal);
   background-color: var(--color-bg-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition-property: background-color, color;
+  transition-property: background-color, border;
   transition-duration: var(--anim-base), var(--anim-base);
   transition-timing-function: var(--anim-timing), var(--anim-timing);
   transition-delay: 0ms;
@@ -694,7 +699,10 @@ img {
 .modal-btn:focus {
   background-color: var(--color-bg-hover-ocean);
   color: var(--color-txt-white);
+  border: none;
 }
 .modal-icon {
   fill: currentColor;
+
+  transition: fill var(--anim-base) var(--anim-timing);
 }
