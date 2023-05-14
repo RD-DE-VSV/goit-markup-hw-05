@@ -472,8 +472,8 @@ img {
   border-radius: 4px;
   color: var(--color-border-light-slate);
 
-  transition: color var(--anim-base) var(--anim-timing),
-    border-color var(--anim-base) var(--anim-timing);
+  transition: border-color var(--anim-base) var(--anim-timing),
+    color var(--anim-base) var(--anim-timing);
 
   /* transition-property: color, border;
   transition-duration: var(--anim-base), var(--anim-base);
